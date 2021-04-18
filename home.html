@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://kit.fontawesome.com/b50c7c0b3b.js" crossorigin="anonymous"></script>
+
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Password Generator</h2>
+        <div class="result-container">
+            <span id="result"></span>
+            <button class="btn" id="clipboard">
+                <i class="fas fa-clipboard"></i>
+            </button>
+        </div>
+        <div class="settings">
+            <div class="setting" class="checkmark">
+                <label for="length">Password Length      
+                <input type="number" class="plcounter" id="length" min="8" max="128" value="128"/>
+                </label>
+            </div>
+            <div class="setting">
+                <label for="uppercase" class="custom-checkbox">Include uppercase letters
+                    <input type="checkbox" id="uppercase"/>
+                    <span class="checkmark"></span> 
+                </label>
+            </div>
+            <div class="setting">
+                <label for="lowercase" class="custom-checkbox">Include lowercase letters
+                    <input type="checkbox" id="lowercase"/>
+                    <span class="checkmark"></span> 
+                </label>
+            </div>
+            <div class="setting">
+                <label class="custom-checkbox">Include numbers
+                    <input type="checkbox" id="numbers"/>
+                    <span class="checkmark"></span> 
+                </label>
+            </div>
+            <div class="setting">
+                <label for="symbols" class="custom-checkbox">Include symbols
+                    <input type="checkbox" id="symbols"/>
+                    <span class="checkmark"></span> 
+                </label>
+            </div>
+        </div>
+        <button class="btn btn-large" id="generate">
+            Generate Password
+        </button>
+    </div>
+
+    <script src="tutorial.js"></script>
+</body>
+</html>
