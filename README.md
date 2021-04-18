@@ -1,2 +1,1 @@
-# securePasswordGenerator
-# securePasswordGenerator
+# passwordGenerator
